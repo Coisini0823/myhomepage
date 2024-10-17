@@ -5,7 +5,6 @@ module.exports = defineConfig({
 
 module.exports = {
   devServer: {
-    cors: true,
     proxy: {
       '/api': {
         target: 'http://localhost:3000',
