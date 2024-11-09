@@ -96,7 +96,7 @@ export default new Vuex.Store({
           localStorage.setItem('logintoken', JSON.stringify(payload))
           context.commit('gettoken', payload)
         } else context.commit('gotologin')
-      }, 400)
+      }, 1000)
     },
     // 提交用户信息
     async adduserlist (context, newmessage) {
